@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+
+<title>ちんしょう本データ</title>
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: index;
+		--web-view-id: index;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: index;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+
+	input[type="range"] {
+  		-webkit-appearance: none; /* 🚩これ無しだとスタイルがほぼ全く反映されないので注意 */
+  		appearance: none;
+  		cursor: pointer; /* カーソルを分かりやすく */
+ 		outline: none; /* スライダーのアウトラインは見た目がキツイので消す */
+  		height: 14px; /* バーの高さ */
+  		width: 419px; /* バーの幅 */
+  		background: #ffffff; /* バーの背景色 */
+  		border-radius: 14px; /* バーの両端の丸み */
+  		border: solid 4px #707070; /* バー周囲の線 */
+	}
+	/* WebKit向けのつまみ */
+	input[type="range"]::-webkit-slider-thumb {
+ 		 -webkit-appearance: none; /*  🚩デフォルトのつまみのスタイルを解除 */
+ 		 background: #ffffff; /* 背景色 */
+ 		 width: 40px; /* 幅 */
+  		 height: 40px; /* 高さ */
+ 		 border-radius: 50%; /* 円形に */
+ 		 box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15); /* 影 */
+  		 border: solid 4px #707070; /* バー周囲の線 */
+	}
+
+	#index_3 {
+		position: absolute;
+		width: 1920px;
+		height: 1080px;
+		background-color: rgb(253, 243, 223);
+		overflow: hidden;
+		--web-view-name: index;
+		--web-view-id: index;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+
+	@font-face {
+	font-family: "myfont";
+	src: url("./chinsho_VF.woff2");
+	}
+
+	.text {
+	font-family: 'myfont';
+	}
+
+	.size-120 {
+	font-size: 120px;
+	left: 872px;
+	top: 64px;
+	position: absolute;
+	}
+
+	.size-80 {
+	font-size: 80px;
+	left: 872px;
+	top: 256px;
+	position: absolute;
+	}
+
+	.size-56 {
+	font-size: 56px;
+	left: 872px;
+	top: 408px;
+	position: absolute;
+	}
+
+	.size-24 {
+	font-size: 24px;
+	left: 872px;
+	top: 536px;
+	position: absolute;
+	}
+
+	.size-16 {
+	left: 872px;
+	top: 666px;
+	position: absolute;
+	font-size: 16px;
+	}
+
+	.size-40-ka-3 {
+	left: 486px;
+	top: 471px;
+	position: absolute;
+	font-size: 40px;
+	}
+
+	.size-40-ka-2 {
+	font-size: 40px;
+	left: 291px;
+	top: 471px;
+	position: absolute;
+	}
+	
+	.size-40-ka-1 {
+	font-size: 40px;
+	left: 96px;
+	top: 471px;
+	position: absolute;
+	}
+
+	.size-40-hi-3 {
+	font-size: 40px;
+	left: 486px;
+	top: 64px;
+	position: absolute;
+	}
+	.size-40-hi-2 {
+	font-size: 40px;
+	left: 291px;
+	top: 64px;
+	position: absolute;
+	}
+	.size-40-hi-1 {	
+	font-size: 40px;
+	left: 96px;
+	top: 64px;
+	position: absolute;
+	}
+
+	#weight_count {
+		left: 1098px;
+		top: 932px;
+		position: absolute;
+		overflow: visible;
+		width: 61px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Optima;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 36px;
+		color: rgba(255,255,255,1);
+	}
+	#counterspace_count {
+		left: 1719px;
+		top: 932px;
+		position: absolute;
+		overflow: visible;
+		width: 61px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Optima;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 36px;
+		color: rgba(255,255,255,1);
+	}
+	#bar_1 {
+		position: absolute;
+		width: 419px;
+		height: 35px;
+		left: 931px;
+		top: 1011px;
+		overflow: visible;
+	}
+	#bar_2 {
+		position: absolute;
+		width: 419px;
+		height: 35px;
+		left: 1451px;
+		top: 1011px;
+		overflow: visible;
+	}
+	.bg-svg {
+  		width: 1920px;
+  		height: 1080px;
+  		background-image: url("./notmove.svg");
+	}
+</style>
+</head>
+<body>
+<div id="index__2">
+	<p class="text size-120">いろはにほへとちりぬるを</p>
+	<p class="text size-80">いろはにほへとちりぬるをわかよたれそ</p>
+	<p class="text size-56">いろはにほへとちりぬるをわかよたれそつねならむ</p>
+	<p class="text size-24">いろはにほへ　とちりぬるを　わかよたれそ　つねならむ　ういのおくやま　けふこえて あさひゆめみし　えひもせす<br/>トリナクコヱス　ユメサマセ　ミヨアケワタル　ヒンカシヲ ソライロハエテ　オキツヘニ　ホフネムレヰヌ　モヤノウチ</p>
+	<p class="text size-16">いろはにほへとちりぬるを　わかよたれそつねならむ　ういのおくやまけふこえて　あさひゆめみし　えひもせす<br/>トリナクコヱス　ユメサマセ　ミヨアケワタル　ヒンカシヲ　ソライロハエテ　オキツヘニ　ホフネムレヰヌ　モヤノウチ<br/><br/>こんにちは　さようなら　やまあらし　おやしらず　うわのそら　おおみそか　あきのやま　ふゆのうみ　コロンビア　フランス　モザンビーク　メキシコ　スリランカ　ベルリン　カラーチャート<br/>オンスクリーンむけに、バリアブルフォントとモダンなデザインでうまれかわった、あたらしいそうちょうたいです。ひらがな、カタカナにたいおうしています。<br/>シャープさはそのままに、どこかあたたかみ、したしみのあるタイプフェイスデザインです。</p>
+	
+	<p class="text size-40-ka-3">ヴ<br/>ガギグゲゴ<br/>ザジズゼゾ<br/>ダヂヅデド<br/>バビブベボ<br/>パピプペポ</p>
+	<p class="text size-40-ka-2">ヤユヨ<br/>ラリルレロ<br/>ワヰヱヲン<br/>ァィゥェォ<br/>ッヶャュョ</p>
+	<p class="text size-40-ka-1">アイウエオ<br/>カキクケコ<br/>サシスセソ<br/>タチツテト<br/>ナニヌネノ<br/>ハヒフヘホ<br/>マミムメモ</p>
+	<p class="text size-40-hi-3">ゔ<br/>がぎぐげご<br/>ざじずぜぞ<br/>だぢづでど<br/>ばびぶべぼ<br/>ぱぴぷぺぽ</p>
+	<p class="text size-40-hi-2">やゆよ<br/>らりるれろ<br/>わゐゑをん<br/>ぁぃぅぇぉ<br/>っゃゅょ</p>
+	<p class="text size-40-hi-1">あいうえお<br/>かきくけこ<br/>さしすせそ<br/>たちつてと<br/>なにぬねの<br/>はひふへほ<br/>まみむめも</p>
+
+	<div id="bar_1">
+		<input type="range" id="weight-slider" name="weight-slider" min="200" max="500" value="400" step="1">
+	</div>
+	<div id="bar_2">
+		<input type="range" id="counter-space-slider" name="counter-space-slider" min="10" max="100" value="10" step="1">
+	</div>
+	<div id="counterspace_count">
+		<p id="counter-space-slider_get">10</p>
+	</div>
+	<div id="weight_count">
+		<p id="weight-slider_get">400</p>
+	</div>
+	<div class="bg-svg">
+		<img src="./notmove.svg" width="1920" height="1080" alt=""> 
+	</div>
+</div>
+	<script src="jquery.min.js"></script>
+	<!--
+	オンラインでダウンロードして読み込む場合は、次の感じ
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	-->
+	<script>//バリアブルで動かすコード
+		$(function() {
+		  let weight = 400;
+		  let counterSpace = 10;
+	
+		  const changeVariable = () =>  {
+			$('.text').css({
+			  'font-variation-settings': `"wght" ${weight}, "opsz" ${counterSpace}`
+			});
+		  }
+	
+		  changeVariable();
+	
+		  $('#weight-slider').on('input change', event => {
+			weight = event.target.value
+			changeVariable()
+		  });
+	
+		  $('#counter-space-slider').on('input change', event => {
+			counterSpace = event.target.value
+			changeVariable()
+		  });
+		});
+	</script>
+	<script>//値参照して文字をリアルタイムで表示するコード
+			var elem = document.getElementById('weight-slider');
+			var target = document.getElementById('weight-slider_get');
+	
+			var rangeValue = function (elem, target) {
+			return function(evt){
+				target.innerHTML = elem.value;
+			}
+			}
+			elem.addEventListener('input', rangeValue(elem, target));
+	
+	
+			var elem2 = document.getElementById('counter-space-slider');
+			var target2 = document.getElementById('counter-space-slider_get');
+			
+			elem2.addEventListener('input', rangeValue(elem2, target2));
+	</script>
+</body>
+</html>
